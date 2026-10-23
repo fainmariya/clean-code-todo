@@ -6,11 +6,11 @@ module.exports = defineConfig([
   {
     files: ["app.js"],
     plugins: {
-        js,
+      js,
     },
     extends: ["js/recommended"],
     languageOptions: {
-        globals: globals.browser,
+      globals: globals.browser,
     },
     rules: {
       "no-var": "error",
@@ -19,9 +19,9 @@ module.exports = defineConfig([
     },
   },
   {
-    files:["eslint.config.js"],
+    files: ["eslint.config.js"],
     languageOptions: {
-        globals: globals.node,
+      globals: globals.node,
     },
-  }
+  },
 ]);
